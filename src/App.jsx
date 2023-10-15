@@ -75,7 +75,7 @@ export const App = () => {
 	};
 
 	return (
-		<div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain bg-gray-200 min-h-screen">
+		<div className="bg-[url('./assets/images/bg-mobile-light.jpg')] dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] bg-no-repeat bg-contain bg-gray-200 min-h-screen dark:bg-gray-900">
 			{/* Header */}
 			<Header />
 			<main className="container mx-auto px-4 mt-4">
@@ -99,7 +99,9 @@ export const App = () => {
 				/>
 			</main>
 
-			<footer className="text-center mt-8">Drag&Drop</footer>
+			<footer className="text-center mt-8 dark:text-gray-400">
+				Drag&Drop
+			</footer>
 		</div>
 	);
 };
