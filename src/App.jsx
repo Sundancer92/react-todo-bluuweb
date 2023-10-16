@@ -61,7 +61,7 @@ export const App = () => {
 		<div className="bg-[url('./assets/images/bg-mobile-light.jpg')] dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] bg-no-repeat bg-contain bg-gray-200 min-h-screen dark:bg-gray-900">
 			{/* Header */}
 			<Header />
-			<main className="container mx-auto px-4 mt-4">
+			<main className="container px-4 mx-auto mt-4">
 				<TodoCreate createTodo={createTodo} />
 
 				{/* TodoList (TodoItem) -TodoUpdate -TodoDelete */}
@@ -82,7 +82,7 @@ export const App = () => {
 				/>
 			</main>
 
-			<footer className="text-center mt-8 dark:text-gray-400">
+			<footer className="mt-8 text-center dark:text-gray-400">
 				Drag&Drop
 			</footer>
 		</div>
